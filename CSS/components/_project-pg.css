@@ -94,7 +94,7 @@ main {
     background-color: white;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.3s, height 0.3s;
 }
 
 .read-more-btn:hover::before {
@@ -104,5 +104,5 @@ main {
 
 .read-more-btn:hover span {
     color: black;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 }
