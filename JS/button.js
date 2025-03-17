@@ -1,7 +1,7 @@
 
 export function button() {
 
-    const btn = document.querySelector('.read-more-btn');
+    const btn = document.querySelectorAll('.read-more-btn');
 
     btn.addEventListener('mousemove', (e) => {
         const rect = btn.getBoundingClientRect();
