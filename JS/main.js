@@ -1,1 +1,1 @@
-import { header } from "../JS/header";
+import { header } from "../JS/header.js";
