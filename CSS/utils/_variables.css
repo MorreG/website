@@ -1,0 +1,66 @@
+:root { /* Mobile First */
+    --ff-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --ff-sub-heading: "Montserrat", sans-serif;
+    --ff-body: "Hind Madurai", serif;
+
+    --clr-primary: black;
+    --clr-secondary: white;
+
+    --fs-h1: 2.4rem; /* main-1 */
+    --fs-h2: 2rem; /* main-2 home-pg --- just nu pg second */
+    --fs-h3: 1.125rem; /* main-3 mindre rubriker */
+    --fs-h4: 1rem; /* reserved */
+    --fs-h5: 1rem; /* Underrubrik till main-1 */
+    --fs-h6: 0.9rem; /* Underrubrik till main-2 */
+    --fs-body: 1.125rem; /* paragraf size */
+
+    --edge-pd: 1em; /* Finns det något bättre sätt? idk. För mobiler och med tanke på hur man håller enheterna. */
+}
+
+@media (min-width: 48em) { /* ---------------------------------------------------- Tablet ... 768px width */
+    :root {
+        --clr-primary: red;
+        --clr-secondary: white;
+
+        --fs-h1: 3rem;
+        --fs-h2: 2rem; /*frn 2.4 */
+        --fs-h3: 2rem;
+        --fs-h4: 1rem; /* reserved */
+        --fs-h5: 1rem; /* Underrubrik till main-1 */
+        --fs-h6: 0.9rem; /* Underrubrik till main-2 */
+        --fs-body: 1.125rem;
+    
+        --edge-pd: 2em; /* Återigen, tablets mtp smala bezzels */
+    }
+}
+
+@media (min-width: 64em) { /* ---------------------------------------------------- LAPTOP ... 1024px width */
+    :root {
+        --clr-primary: blue;
+        --clr-secondary: white;
+
+        --fs-h1: 3.4rem;
+        --fs-h2: 1.8rem;
+        --fs-h3: 2rem;
+        --fs-h4: 1rem; /* reserved */
+        --fs-h5: 1rem; /* Underrubrik till main-1 */
+        --fs-h6: 0.9rem; /* Underrubrik till main-2 */
+        --fs-body: 0.8rem;
+    
+        --edge-pd: 1.5em; /* Återigen, tablets mtp smala bezzels */
+    }
+}
+
+@media (min-width: 90em) { /* ---------------------------------------------------- 1440px avr datorskärm */
+    :root {
+        --clr-primary: green;
+        --clr-secondary: white;
+    }
+}
+
+@media (min-width: 160em) { /* ---------------------------------------------------- 2560px 4k skärm*/
+    :root {
+        --clr-primary: purple;
+        --clr-secondary: white;
+    }
+}

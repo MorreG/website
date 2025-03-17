@@ -1,0 +1,108 @@
+main {
+    flex: 1;
+}
+
+.project-section {
+    height: 100vh;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.project-content {
+    position: relative;
+    z-index: 1;
+    padding-left: 2rem; /* Standard för mobila enheter */
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    max-width: 800px; /* Fungerar bra än sålänge.. byter från600px */
+}
+
+.project-content h2 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h2); /* Standard för mobila enheter  1.75rem def*/
+    margin-bottom: 0.6rem;
+}
+
+.project-content h6 {
+    font-size: var(--fs-h6); /* Standard för mobila enheter, def 1rem*/
+    /*font-weight: lighter;*/
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    max-width: 60ch;
+}
+
+/* Stilar för större skärmar (768px och uppåt) */
+@media (min-width: 48em) {
+    .project-content {
+        padding-left: 12%; /* Anpassning för större skärmar */
+        padding-right: 0;
+        padding-bottom: 6%;
+    }
+    /* H2 = font-size: 1.8rem;*/ /* Anpassning för större skärmar */
+
+    /* P = font-size: 0.8rem;*/ /* Anpassning för större skärmar */
+}
+
+@media (min-width: 90em) {
+    .project-content {
+        max-width: 1200px;
+    }
+}
+
+/* ... BUTTON ... */
+
+.read-more-btn {
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    background: transparent;
+    border: 1.5px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.read-more-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.read-more-btn::before {
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: 0;
+    height: 0;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.read-more-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.read-more-btn:hover span {
+    color: black;
+    transition: color 0.3s ease;
+}

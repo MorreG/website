@@ -1,2 +1,9 @@
 
 /* STYLE IMPORTS */
+
+@import "../CSS/utils/_variables.css";
+@import "../CSS/utils/_reset.css";
+@import "../CSS/utils/_base.css";
+@import "../CSS/components/_header.css";
+@import "../CSS/components/_footer.css";
+@import "../CSS/components/_project-pg.css";
