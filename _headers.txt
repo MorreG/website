@@ -1,2 +1,0 @@
-/JS/*.js
-Content-Type: application/javascript
