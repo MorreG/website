@@ -1,3 +1,26 @@
 main {
     display: flex;
 }
+
+
+/* HTML ändringar
+
+
+aboutLanding -> about-hero
+
+About -> about
+
+aboutHeader -> about-header
+
+aboutText -> about-content
+
+
+Contact -> contact
+
+form-group -> form-item
+
+contact-info-container -> info-container
+
+contact-info -> info-container-content
+
+*/
