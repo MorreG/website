@@ -68,9 +68,6 @@ flex-direction: column;
 }
 
 .about-content p {
-    max-width: 65%; 
     color: white; 
-    font-family: sans-serif; 
-    line-height: 1.7;
     margin-bottom: 1rem;
 }
