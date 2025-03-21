@@ -43,3 +43,34 @@ flex-direction: column;
     background-position: center;
     background-attachment: fixed;
 }
+
+/* Content inte längre HERO */
+
+.about {
+    background: black;
+    display:  inline-block;
+    padding: 5%;
+}
+
+.about-header h2 {
+    max-width: 37ch;
+    color: white;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+.about-header h2 span {
+    color: red;
+}
+
+.about-content {
+    padding-top: 200px;
+}
+
+.about-content p {
+    max-width: 65%; 
+    color: white; 
+    font-family: sans-serif; 
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
