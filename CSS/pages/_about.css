@@ -1,5 +1,6 @@
 .main-about {
     display: flex;
+    flex-direction: column;
 }
 
 
@@ -22,6 +23,13 @@ form-group -> form-item
 contact-info-container -> info-container
 
 contact-info -> info-container-content
+
+
+body {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
 
 */
 
