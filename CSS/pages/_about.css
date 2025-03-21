@@ -1,4 +1,4 @@
-main {
+.main-about {
     display: flex;
 }
 
@@ -24,3 +24,14 @@ contact-info-container -> info-container
 contact-info -> info-container-content
 
 */
+
+.about-hero { /* Hero css */
+    height: 85vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
