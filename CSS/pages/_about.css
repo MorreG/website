@@ -68,6 +68,7 @@ flex-direction: column;
 }
 
 .about-content p {
+    max-width: 65%; 
     color: white; 
     margin-bottom: 1rem;
 }
