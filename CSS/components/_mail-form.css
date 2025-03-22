@@ -45,6 +45,7 @@ label {
     color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
     transition: 0.3s ease all;
+    font-family: var(--ff-body);
 }
 
 input:focus ~ label,
