@@ -107,11 +107,8 @@ TODO
 }
 
 .info-container {
-    flex-direction: column-reverse;
     padding-left: 0;
-    display: flex;
     flex: 1;     
-    align-items: center;
     position: relative;
 }
 
@@ -132,7 +129,7 @@ TODO
 
 .info-container-content p {
     color: rgba(255, 255, 255, 0.8);
-    margin-right: auto; /* max width */
+    max-width: none;
 }
 
 /* ... Profilbild ... */
