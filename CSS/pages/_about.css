@@ -95,15 +95,24 @@ TODO
 /* ... Kontakt-sektion ... */
 
 .contact-container {
+    display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
     gap: 8rem;
+    margin: 0 auto;
+    background: #000;
+    min-height: 100vh;
 }
 
 .info-container {
     flex-direction: column-reverse;
     padding-left: 0;
+    display: flex;
+    flex: 1;     
+    align-items: center;
+    position: relative;
 }
 
 .vertical-line {
@@ -111,6 +120,7 @@ TODO
 }
 
 .info-container-content {
+    flex: 1;
     text-align: center;
     padding-right: 0;
     margin-top: 2rem;
@@ -134,22 +144,12 @@ TODO
 
 @media (min-width: 48em) {
     .contact-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 5%;
-        background: #000;
-        color: #fff;
-        min-height: 100vh;
+        flex-direction: row;
+        padding: 5%;  
         gap: 1rem;
     }
 
     .info-container {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        position: relative;
         padding-left: 20px;
     }
 
@@ -166,7 +166,6 @@ TODO
     }
 
     .info-container-content {
-        flex: 1;
         text-align: right;
         padding-right: 20px;
     }
