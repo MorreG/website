@@ -1,8 +1,8 @@
 
 .contact-form {
-    margin-top: 4rem;
-    position: relative;
-    flex: 1;
+    width: 80%;
+    padding-right: 0;
+    margin-bottom: 40px;
 }
 
 .form-item {
@@ -86,4 +86,12 @@ textarea:not(:placeholder-shown) ~ label {
 .submit-button:hover span {
     color: black;
     transition: color 0.3s ease;
+}
+
+@media (min-width: 48em) {
+    .contact-form {
+        margin-top: 4rem;
+        position: relative;
+        flex: 1;
+    }
 }

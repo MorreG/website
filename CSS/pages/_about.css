@@ -1,4 +1,4 @@
-.main-about {
+.main-about { 
     display: flex;
     flex-direction: column;
 }
@@ -31,9 +31,27 @@ display: flex;
 flex-direction: column;
 }
 
+
+Flyttat runt css och isolerat kontaktform till en egen komponent
+
+TODO
+
+1 Lägga till responsiva biten
+
+2 ändra värden från px
+
+3 sätta max bildstorlek?
+
+4 Mer line height?
+
+5 Kontaktform font + färg på hålltext?
+
+
 */
 
-.about-hero { /* Hero css */
+/* ... Bakgrund ... */
+
+.about-hero {
     height: 85vh;
     position: relative;
     display: flex;
@@ -44,7 +62,7 @@ flex-direction: column;
     background-attachment: fixed;
 }
 
-/* Content inte längre HERO */
+/* ... Text ... */
 
 .about {
     background: black;
@@ -73,65 +91,35 @@ flex-direction: column;
     margin-bottom: 1rem;
 }
 
-/* Contact container part */
 
+/* ... Kontakt-sektion ... */
 
 .contact-container {
-    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 5%;
-    background: #000;
-    color: #fff;
-    min-height: 100vh;
-    gap: 1rem;
+    padding: 20px;
+    gap: 8rem;
 }
 
-/* Contact INFO part */
-
 .info-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding-left: 20px;
+    flex-direction: column-reverse;
+    padding-left: 0;
 }
 
 .vertical-line {
-    position: absolute;
-    display: flex;
-    flex: 1;
-    right: 0%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1.5px;
-    height: 200px; /* Adjust height as needed */
-    background-color: #fff;
+    display: none;
 }
 
 .info-container-content {
-    flex: 1;
-    text-align: right;
-    padding-right: 20px;
+    text-align: center;
+    padding-right: 0;
+    margin-top: 2rem;
 }
 
-.info-container-content h2 {
-    /*font-size: 24px;*/
-    margin-bottom: 10px;
-}
-
-.info-container-content p {
-    color: rgba(255, 255, 255, 0.8);
-    margin: 5px 0;
-}
-
-/* Profile IMG part */
+/* ... Profilbild ... */
 
 .profile-image {
     flex: 0.8;
-    /*width: 50%;
-    height: 50%;*/
     border-radius: 50%;
     overflow: hidden;
 }
@@ -142,4 +130,49 @@ flex-direction: column;
     object-fit: cover;
     display: block;
     margin: auto;
+}
+
+@media (min-width: 48em) {
+    .contact-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 5%;
+        background: #000;
+        color: #fff;
+        min-height: 100vh;
+        gap: 1rem;
+    }
+
+    .info-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 20px;
+    }
+
+    .vertical-line {
+        position: absolute;
+        display: flex;
+        flex: 1;
+        right: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.5px;
+        height: 200px;
+        background-color: #fff;
+    }
+
+    .info-container-content {
+        flex: 1;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .info-container-content p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-right: auto; /* max width */
+    }
 }
