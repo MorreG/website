@@ -70,6 +70,20 @@ TODO
     padding: 5%;
 }
 
+.about-header-container {
+    display: flex;
+    border: red solid 2px;
+}
+
+.about-header-empty {
+    background-color: bisque;
+    flex: 1;
+}
+
+.about-header {
+    flex: 1;
+}
+
 .about-header h1 {
     max-width: 37ch;
     color: white;
