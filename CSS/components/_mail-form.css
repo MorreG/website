@@ -1,8 +1,8 @@
 
 .contact-form {
-    width: 80%;
-    padding-right: 0;
-    margin-bottom: 40px;
+    width: 90%;
+    margin: 8em 0 4em 0;
+    max-width: 64em;
 }
 
 .form-item {
@@ -19,6 +19,12 @@ input, textarea {
     color: #fff;
     font-size: 16px;
     outline: none;
+    font-family: var(--ff-body);
+}
+
+input:focus, textarea:focus {
+    border: none;
+    border-bottom: 1.5px solid white;
 }
 
 textarea {
@@ -30,7 +36,7 @@ label {
     position: absolute;
     left: 0;
     top: 10px;
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
     pointer-events: none;
     transition: 0.3s ease all;
     font-family: var(--ff-body);
@@ -42,7 +48,7 @@ input:not(:placeholder-shown) ~ label,
 textarea:not(:placeholder-shown) ~ label {
     top: -20px;
     font-size: 14px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .submit-button {
@@ -90,6 +96,7 @@ textarea:not(:placeholder-shown) ~ label {
 
 @media (min-width: 48em) {
     .contact-form {
+        width: 80%;
         margin-top: 4rem;
         position: relative;
         flex: 1;

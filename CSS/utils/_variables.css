@@ -39,7 +39,7 @@
         --clr-primary: blue;
         --clr-secondary: white;
 
-        --fs-h1: 3.4rem;
+        --fs-h1: clamp(4rem, 2vw + 1rem, 5rem);
         --fs-h2: 1.8rem;
         --fs-h3: 2rem;
         --fs-h4: 1rem; /* reserved */
