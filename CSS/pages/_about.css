@@ -96,19 +96,25 @@ TODO
     color: red;
 }
 
-.about-content-container {
-    display: flex;
-    flex-direction: row-reverse;
-    border: red solid 2px;
-}
-
-.about-content-empty {
-    background-color: bisque;
-    flex: 1;
+@media (min-width: 48em) {
+    .about-content-container {
+        display: flex;
+        flex-direction: row-reverse;
+        border: red solid 2px;
+    }
+    
+    .about-content-empty {
+        background-color: bisque;
+        flex: 1;
+    }
+    
+    .about-content {
+        flex: 2;
+        padding-top: 200px;
+    }
 }
 
 .about-content {
-    flex: 2;
     padding-top: 200px;
 }
 
