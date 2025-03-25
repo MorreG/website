@@ -124,6 +124,10 @@ TODO
     margin-bottom: 1rem;
 }
 
+.about-content p i {
+    font-style: oblique;
+}
+
 
 /* ... Kontakt-sektion ... */
 
