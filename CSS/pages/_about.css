@@ -64,14 +64,15 @@ TODO
 
 /* ... Text ... */
 
-.about {
+.about { /* Behövs bara för text - tar bort för header. */
     background: black;
     display:  inline-block;
     padding: 5%;
 }
-
+/*
 .about-header-container {
     display: flex;
+    flex-direction: row-reverse;
     border: red solid 2px;
 }
 
@@ -82,7 +83,7 @@ TODO
 
 .about-header {
     flex: 1;
-}
+}*/
 
 .about-header h1 {
     max-width: 37ch;
@@ -95,7 +96,19 @@ TODO
     color: red;
 }
 
+.about-content-container {
+    display: flex;
+    flex-direction: row-reverse;
+    border: red solid 2px;
+}
+
+.about-content-empty {
+    background-color: bisque;
+    flex: 1;
+}
+
 .about-content {
+    flex: 1;
     padding-top: 200px;
 }
 
