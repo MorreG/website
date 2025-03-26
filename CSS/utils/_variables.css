@@ -39,7 +39,7 @@
         --clr-primary: blue;
         --clr-secondary: white;
 
-        --fs-h1: clamp(3.4rem, 2vw + 1rem, 5rem); /*low var på 4rem, men lite stort på laptop*/
+        --fs-h1: clamp(3.4rem, 3vw + 1rem, 5rem); /*low var på 4rem, men lite stort på laptop*/
         --fs-h2: 1.8rem;
         --fs-h3: 2rem;
         --fs-h4: 1rem; /* reserved */
