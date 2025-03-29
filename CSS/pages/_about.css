@@ -36,16 +36,13 @@ Flyttat runt css och isolerat kontaktform till en egen komponent
 
 TODO
 
-1 Lägga till responsiva biten
+1 Lägga till responsiva biten 
 
 2 ändra värden från px
 
-3 sätta max bildstorlek?
+3 Mer line height?
 
-4 Mer line height?
-
-5 Kontaktform font + färg på hålltext?
-
+4 Lägga overlay på bakgrundsbilden
 
 */
 
@@ -221,11 +218,6 @@ TODO
         text-align: right;
         padding-right: 20px;
     }
-
-    /*
-    .about-content p {
-        font-size: clamp(1rem, 0.6vw + 0.2rem, 2rem);
-    }*/
 }
 
 @media (min-width: 64em) {
@@ -249,23 +241,27 @@ TODO
 @media (min-width: 112em) {
     .about-content p {
         max-width: 85ch;
+        line-height: 1.6rem;
     }
 }
 
 @media (min-width: 128em) {
     .about-content p {
         max-width: 90ch;
+        line-height: 1.6rem;
     }
 }
 
 @media (min-width: 144em) {
     .about-content p {
         max-width: 95ch;
+        line-height: 1.6rem;
     }
 }
 
 @media (min-width: 160em) {
     .about-content p {
         max-width: 100ch;
+        line-height: 1.6rem;
     }
 }
