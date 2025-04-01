@@ -1,0 +1,687 @@
+
+/* ---------- * ---------- SEKTION [ 2 ] Bakgrund ---------- * ---------- */
+
+.section-two {
+    display: flex;
+    flex-direction: column; /* För Mobil */
+    height: 100vh;
+    height: 100dvh;
+    margin-bottom: 4em;
+}
+
+.two-background {
+    flex: 3;
+    overflow: hidden;
+}
+
+.two-background-image {
+    width: 100%; /* Bilden skalas rätt / Hela bilden syns */
+    height: 100%; /* Bilden skalas rätt / Hela bilden syns */
+    object-fit: cover; /* Motsvarar background-size: cover */
+    object-position: center; /* Motsvarar background-position: center */
+}
+
+.two-text-container {
+    flex: 1;
+    background-color: var(--clr-primary);
+    padding: 2em var(--edge-pd) 0 2em; /* EDGE PADDING */
+}
+
+.two-text {
+    background-color: var(--clr-primary);
+    text-align: right;
+    color: var(--clr-secondary);
+}
+
+.two-text h2 {
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 64em) { /* 1024px */
+    .section-two {
+        flex-direction: row;
+        height: 150vh;
+        height: 150dvh;
+        margin-top: 1em;
+        margin-bottom: 0; /* ALT 10em */ 
+    }
+
+    .two-background {
+        flex: 3;
+        height: 100%;
+    }
+
+    .two-text-container {
+        flex: 1;
+    }
+
+    .two-text {
+        position: sticky;
+        top: 2em;
+        margin-bottom: 5em;
+    }
+}
+
+@media (min-width: 90em) { /* 1440px */
+    .section-two {
+        flex-direction: row;
+    }
+
+    .two-background {
+        flex: 3;
+        height: 100%;
+    }
+
+    .two-text-container {
+        flex: 1;
+        max-width: 25em;
+    }
+}
+
+/* ---------- * ---------- SEKTION [ 3 ] image-grid ---------- * ---------- */
+
+.three-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 50dvh); /* 65 org */
+    grid-template-columns: 100vw;
+    margin-top: 10em; /* Skiljerum till SEKTION 2 */
+}
+
+.three-grid-image { /* Gäller båda bilderna för SEKTION [ 3 ] */
+    width: 100%; /* Bilden skalas rätt / Hela bilden syns */
+    height: 100%; /* Bilden skalas rätt / Hela bilden syns */
+    object-fit: cover; /* Motsvarar background-size: cover */
+    object-position: center; /* Motsvarar background-position: center */
+}
+
+.three-text-container-1 { /* T R B L */
+    text-align: right;
+    padding: 2em var(--edge-pd) 0 2em; /* EDGE PADDING */
+    color: var(--clr-secondary);
+}
+
+.three-text-container-2 {
+    text-align: left;
+    padding: 2em 2em 0 var(--edge-pd); /* EDGE PADDING */
+    color: var(--clr-secondary);
+}
+
+.three-grid-1 { 
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.three-grid-2 { 
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: var(--clr-primary);
+}
+
+.three-grid-3 { 
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.three-grid-4 { 
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: var(--clr-primary);
+}
+
+@media (min-width: 48em) { /* 768px */
+    .three-grid {
+        display: grid;
+        grid-template-rows: repeat(2, 30em); 
+        grid-template-columns: repeat(2, 50%);
+        margin-top: 10em;
+    }
+
+    .three-grid-1 { 
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .three-grid-2 { 
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: var(--clr-primary);
+    }
+    
+    .three-grid-3 { 
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    
+    .three-grid-4 { 
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: var(--clr-primary);
+    }
+
+    .three-grid-2 p {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 64em) { /* 1024px */
+    .three-grid {
+        display: grid;
+        grid-template-rows: repeat(2, 85vh); 
+        grid-template-columns: repeat(2, 50%);
+        margin-top: 0;
+    }
+
+    .three-grid-1 { 
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .three-grid-2 { 
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: var(--clr-primary);
+    }
+    
+    .three-grid-3 { 
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    
+    .three-grid-4 { 
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: var(--clr-primary);
+    }
+}
+
+/* ---------- * ---------- SEKTION [ 4 ] Parallax ---------- * ---------- */
+
+.section-four {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Se till att sektionen tar upp hela bredden */
+}
+
+.four-content {
+    width: 100%; /* Se till att div:arna tar upp hela bredden */
+    height: 20vh;
+    height: 20dvh;
+    /* Lägg till övrig styling för dina div:ar här (höjd, färg, etc.) */
+}
+
+.four-parallax-image {
+    width: 100%; /* Se till att bilden tar upp hela bredden */
+}
+
+@media (min-width: 48em) {
+    .four-parallax-image {
+        height: 50vh;
+        height: 50dvh;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (min-width: 64em) {
+    .four-parallax-image {
+        height: 50vh;
+        height: 50dvh;
+    }
+
+    .four-content {
+        height: 10em;
+        height: 10em;
+    }
+}
+
+/* ---------- * ---------- SEKTION [ 5 ] Galleri ---------- * ---------- */
+
+.section-five {
+    display: flex;
+    flex-direction: column; /* Staplar elementen för mobila enheter */
+    height: 100vh;
+    height: 100dvh;
+}
+
+.five-background {
+    width: 100%;
+    flex: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gallery Styles */
+.five-gallery {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.five-gallery-container {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item.active {
+    opacity: 1;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Custom SVG Arrow Controls */
+.five-gallery-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.five-gallery-prev, .five-gallery-next {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    width: 2rem;
+    padding: 0;
+
+    /* ... Tar bort visuel bugg på mobil  ... */
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.five-gallery-prev {
+    left: 20px;
+}
+
+.five-gallery-next {
+    right: 20px;
+}
+
+.five-slideshow-arrow {
+    fill: rgba(255, 255, 255, 0.8);
+    transition: fill 0.3s ease;
+}
+
+.five-gallery-prev:hover .five-slideshow-arrow,
+.five-gallery-next:hover .five-slideshow-arrow {
+    fill: white;
+}
+
+/* Navigation Dots */
+.five-gallery-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.gallery-dot {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-dot.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+/* Original styles */
+.five-text-container {
+    flex: 2;
+    background-color: var(--clr-primary);
+    padding: 2em var(--edge-pd) 0 2em; /* EDGE PADDING */
+}
+
+.five-text {
+    background-color: var(--clr-primary);
+    position: relative; /* Ändrat från sticky för mobila enheter */
+    text-align: right;
+    color: var(--clr-secondary);
+}
+
+.five-text h2 {
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 64em) { /* 1024px tidigare 768px */
+    .section-five {
+        flex-direction: row-reverse; /* Ändra riktning för större skärmar */
+        height: 150vh; /* Återställ höjden för större skärmar */
+        height: 150dvh;
+    }
+
+    .five-background {
+        flex: 3;
+        height: 100%;
+    }
+
+    .five-text-container {
+        flex: 1;
+        /*min-width: 30%; */ /* Sätt min width 0% i senare media querie!!!!!!!!!*/
+    }
+
+    .five-text {
+        position: sticky; /* Återställ sticky för större skärmar */
+        top: 2em;
+        margin-bottom: 5em;
+    }
+}
+
+/* ---------- * ---------- SEKTION [ 6 ] INFO SQUARE ---------- * ---------- */
+
+.section-six {
+    overflow: hidden;
+}
+
+.six-info-container {
+    display: flex;
+    height: 180dvh; /* Varje element får 60vh */
+    flex-direction: column; /* För mobil */
+    margin-top: 10em;
+}
+
+.six-info-1 {
+    background-color: hsl(358, 32%, 16%);
+    flex: 1;
+}
+
+.six-info-2 {
+    background-color: hsl(0, 0%, 10%);
+    flex: 1;
+}
+
+.six-info-3 {
+    background-color: hsl(0, 0%, 5%);
+    flex: 1;
+}
+
+.six-info-text { 
+    color: var(--clr-secondary);
+    text-align: right;
+    padding: 2em var(--edge-pd) 0 2em; /* EDGE PADDING */
+}
+
+.six-info-text-2 {
+    text-align: left;
+    padding: 3em;
+    padding: 2em 2em 0 var(--edge-pd); /* EDGE PADDING */
+}
+
+@media (min-width: 48em) { /* Tablet ... 768px width */
+    .six-info-container {
+        flex-direction: row;
+        height: 65vh;
+        height: 65dvh;
+    }
+
+    .six-info-text { 
+        color: var(--clr-secondary);
+        text-align: center;
+        padding: 2em var(--edge-pd) 0 2em; /* EDGE PADDING */
+    }
+}
+
+@media (min-width: 64em) { /* Laptop ... 1024px width */
+    .six-info-container {
+        flex-direction: row;
+        height: 70vh;
+        height: 70dvh;
+    }
+
+    .six-info-text { 
+        color: var(--clr-secondary);
+        text-align: right;
+        padding: var(--edge-pd) var(--edge-pd) 0 2em; /* EDGE PADDING */
+    }
+}
+
+/* ---------- * ---------- SEKTION [ 7 ] Parallax2 ---------- * ---------- */
+
+.section-seven {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Se till att sektionen tar upp hela bredden */
+}
+
+.seven-content {
+    width: 100%; /* Se till att div:arna tar upp hela bredden */
+    height: 20vh;
+    height: 20dvh;
+    /* Lägg till övrig styling för dina div:ar här (höjd, färg, etc.) */
+}
+
+.seven-parallax-image {
+    width: 100%; /* Se till att bilden tar upp hela bredden */
+}
+
+@media (min-width: 48em) {
+    .seven-parallax-image {
+        height: 50vh;
+        height: 50dvh;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (min-width: 64em) {
+    .seven-parallax-image {
+        height: 50vh;
+        height: 50dvh;
+    }
+
+    .seven-content {
+        height: 10em;
+        height: 10em;
+    }
+}
+
+/* ---------- * ---------- SEKTION [ 8 ] image-text ---------- * ---------- */
+
+.section-eight {
+    display: flex;
+    flex-direction: column; /* För Mobil */
+    height: 100vh;
+    height: 100dvh;
+}
+
+.eight-background {
+    flex: 1;
+    overflow: hidden;
+}
+
+.eight-background-image {
+    width: 100%; /* Bilden skalas rätt / Hela bilden syns */
+    height: 100%; /* Bilden skalas rätt / Hela bilden syns */
+    object-fit: cover; /* Motsvarar background-size: cover */
+    object-position: center; /* Motsvarar background-position: center */
+}
+
+.eight-text-container {
+    flex: 1;
+    background-color: var(--clr-primary);
+    padding: 2em 2em 0 var(--edge-pd); /* EDGE PADDING */
+}
+
+.eight-text {
+    background-color: var(--clr-primary);
+    text-align: left;
+    color: var(--clr-secondary);
+}
+
+.eight-text h2 {
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 64em) { /* 1024px */
+    .section-eight {
+        flex-direction: row;
+        height: 150vh;
+        height: 150dvh;
+        margin-bottom: 10em; /* ALT 0 */
+    }
+
+    .eight-background {
+        flex: 3;
+        height: 100%;
+    }
+
+    .eight-text-container {
+        flex: 1;
+    }
+
+    .eight-text {
+        position: sticky;
+        top: 2em;
+        margin-bottom: 5em;
+    }
+}
+
+@media (min-width: 90em) { /* 1440px */
+    .section-eight {
+        flex-direction: row;
+    }
+
+    .eight-background {
+        flex: 3;
+        height: 100%;
+    }
+
+    .eight-text-container {
+        flex: 1;
+    }
+}
+
+/* ---------- * ---------- SEKTION [ 9 ] image-grid-2 ---------- * ---------- */
+
+.nine-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 50dvh); /* 65 org */
+    grid-template-columns: 100vw;
+}
+
+.nine-grid-image { /* Gäller båda bilderna för SEKTION [ 9 ] */
+    width: 100%; /* Bilden skalas rätt / Hela bilden syns */
+    height: 100%; /* Bilden skalas rätt / Hela bilden syns */
+    object-fit: cover; /* Motsvarar background-size: cover */
+    object-position: center; /* Motsvarar background-position: center */
+}
+
+.nine-text-container-1 { /* T R B L */
+    text-align: right;
+    padding: 2em var(--edge-pd) 0 2em; /* EDGE PADDING */
+    color: var(--clr-secondary);
+}
+
+.nine-text-container-2 {
+    text-align: left;
+    padding: 2em 2em 0 var(--edge-pd); /* EDGE PADDING */
+    color: var(--clr-secondary);
+}
+
+.nine-grid-1 { 
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.nine-grid-2 { 
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: var(--clr-primary);
+}
+
+.nine-grid-3 { 
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.nine-grid-4 { 
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: var(--clr-primary);
+}
+
+@media (min-width: 48em) { /* 768px */
+    .nine-grid {
+        display: grid;
+        grid-template-rows: repeat(2, 30em); 
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .nine-grid-1 { 
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .nine-grid-2 { 
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: var(--clr-primary);
+    }
+    
+    .nine-grid-3 { 
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    
+    .nine-grid-4 { 
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: var(--clr-primary);
+    }
+
+    .nine-grid-4 p {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 64em) { /* 1024px */
+    .nine-grid {
+        display: grid;
+        grid-template-rows: repeat(2, 85vh); 
+        grid-template-columns: repeat(2, 50%);
+        margin-top: 0;
+    }
+
+    .nine-text-container-1 {
+        text-align: left;
+    }
+
+    .nine-text-container-2 {
+        text-align: right;
+    }
+
+    .nine-grid-1 { 
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .nine-grid-2 { 
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: var(--clr-primary);
+    }
+    
+    .nine-grid-3 { 
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    .nine-grid-4 { 
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: var(--clr-primary);
+    }
+}

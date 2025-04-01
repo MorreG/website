@@ -53,7 +53,7 @@
 
 @media (min-width: 90em) { /* ---------------------------------------------------- 1440px avr datorskärm */
     :root {
-        --clr-primary: green;
+        --clr-primary: black;
         --clr-secondary: white;
     }
 }
