@@ -1,5 +1,9 @@
 import { header } from "../JS/header.js";
+import { gallery } from "../JS/gallery.js";
 import { button } from "../JS/button.js";
+
+
+//Nedan är tillfälligt 
 
 document.querySelector('a[href="../Sidor/About.html#Contact"]').addEventListener('click', function(e) {
     e.preventDefault();
