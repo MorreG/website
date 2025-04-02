@@ -1,9 +1,3 @@
-/* ---------- * ---------- SEKTION [ 4 ] Parallax ---------- * ---------- */
-/*
-section-four -> parallax
-four-content -> parallax-margin
-four-parallax-image -> parallax-image
-*/
 .parallax {
     display: flex;
     flex-direction: column;

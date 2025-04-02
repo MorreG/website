@@ -416,46 +416,6 @@
     }
 }
 
-/* ---------- * ---------- SEKTION [ 7 ] Parallax2 ---------- * ---------- */
-
-.section-seven {
-    display: flex;
-    flex-direction: column;
-    width: 100%; /* Se till att sektionen tar upp hela bredden */
-}
-
-.seven-content {
-    width: 100%; /* Se till att div:arna tar upp hela bredden */
-    height: 20vh;
-    height: 20dvh;
-    /* Lägg till övrig styling för dina div:ar här (höjd, färg, etc.) */
-}
-
-.seven-parallax-image {
-    width: 100%; /* Se till att bilden tar upp hela bredden */
-}
-
-@media (min-width: 48em) {
-    .seven-parallax-image {
-        height: 50vh;
-        height: 50dvh;
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
-@media (min-width: 64em) {
-    .seven-parallax-image {
-        height: 50vh;
-        height: 50dvh;
-    }
-
-    .seven-content {
-        height: 10em;
-        height: 10em;
-    }
-}
-
 /* ---------- * ---------- SEKTION [ 8 ] image-text ---------- * ---------- */
 
 .section-eight {
