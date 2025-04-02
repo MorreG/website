@@ -33,10 +33,6 @@
     color: var(--clr-secondary);
 }
 
-.two-text h2 {
-    margin-bottom: 0.5em;
-}
-
 @media (min-width: 64em) { /* 1024px */
     .section-two {
         flex-direction: row;
@@ -364,10 +360,6 @@
     color: var(--clr-secondary);
 }
 
-.five-text h2 {
-    margin-bottom: 0.5em;
-}
-
 @media (min-width: 64em) { /* 1024px tidigare 768px */
     .section-five {
         flex-direction: row-reverse; /* Ändra riktning för större skärmar */
@@ -458,6 +450,10 @@
         text-align: right;
         padding: var(--edge-pd) var(--edge-pd) 0 2em; /* EDGE PADDING */
     }
+
+    .six-info-text p {
+        margin-left: auto;
+    }
 }
 
 /* ---------- * ---------- SEKTION [ 7 ] Parallax2 ---------- * ---------- */
@@ -531,10 +527,6 @@
     background-color: var(--clr-primary);
     text-align: left;
     color: var(--clr-secondary);
-}
-
-.eight-text h2 {
-    margin-bottom: 0.5em;
 }
 
 @media (min-width: 64em) { /* 1024px */
