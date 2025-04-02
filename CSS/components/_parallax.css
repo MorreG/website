@@ -1,0 +1,43 @@
+/* ---------- * ---------- SEKTION [ 4 ] Parallax ---------- * ---------- */
+/*
+section-four -> parallax
+four-content -> parallax-margin
+four-parallax-image -> parallax-image
+*/
+.parallax {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Se till att sektionen tar upp hela bredden */
+}
+
+.parallax-margin {
+    width: 100%; /* Se till att div:arna tar upp hela bredden */
+    height: 20vh;
+    height: 20dvh;
+    /* Lägg till övrig styling för dina div:ar här (höjd, färg, etc.) */
+}
+
+.parallax-image {
+    width: 100%; /* Se till att bilden tar upp hela bredden */
+}
+
+@media (min-width: 48em) {
+    .parallax-image {
+        height: 50vh;
+        height: 50dvh;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (min-width: 64em) {
+    .parallax-image {
+        height: 50vh;
+        height: 50dvh;
+    }
+
+    .parallax-margin {
+        height: 10em;
+        height: 10em;
+    }
+}
