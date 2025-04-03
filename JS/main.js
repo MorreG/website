@@ -1,5 +1,4 @@
 import { header } from "../JS/header.js";
-import { gallery } from "../JS/gallery.js";
 import { button } from "../JS/button.js";
 
 
