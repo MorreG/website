@@ -28,7 +28,7 @@
         --fs-h4: 1rem; /* reserved */
         --fs-h5: 1rem; /* Underrubrik till main-1 */
         --fs-h6: 0.9rem; /* Underrubrik till main-2 */
-        --fs-body: 1.125rem;
+        --fs-body: 1rem;
     
         --edge-pd: 2em; /* Återigen, tablets mtp smala bezzels */
     }
@@ -45,7 +45,7 @@
         --fs-h4: 1rem; /* reserved */
         --fs-h5: 1rem; /* Underrubrik till main-1 */
         --fs-h6: 0.9rem; /* Underrubrik till main-2 */
-        --fs-body: 0.8rem;
+        --fs-body: 1rem;
     
         --edge-pd: 1.5em; /* Återigen, tablets mtp smala bezzels */
     }
@@ -55,6 +55,8 @@
     :root {
         --clr-primary: black;
         --clr-secondary: white;
+
+        --fs-body: 1.125rem;
     }
 }
 

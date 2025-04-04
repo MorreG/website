@@ -61,6 +61,7 @@ h6 { /* Underrubrik till h2 */
 
 p {
     font-family: var(--ff-body);
+    font-size: var(--fs-body);
     line-height: 1.4rem;
     max-width: 65ch; /* Måste sätta margin-right på text som är aligned right. */
 }
