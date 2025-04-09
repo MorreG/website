@@ -1,0 +1,76 @@
+.section-one {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.one-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.one-container-image {
+    overflow: hidden;
+    width: 100%;
+   
+}
+
+.one-container-image__image {
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.one-container-content {
+    color: white;
+    padding: var(--edge-pd);
+    font-size: var(--fs-body);
+}
+
+@media (min-width: 48em) {
+    .section-one {
+        display: flex; /* 1 Det här sätter sektionen till flex */
+        justify-content: center; /* 2 Det här centrerar all content i sektionen vågrätt */
+        align-items: center; /* 3 Det här centrerar all content i sektionen lodrätt */
+        height: 100vh; /* Det här gör att sektionen tar upp hela skärmen [bla för demonstration] */
+        /* width: 100%; *//* Det här gör att sektionen tar upp hela skärmen [bla för demonstration] */
+        overflow: hidden;
+    }
+
+    .one-container { /* Denna container håller allt vi kommer ha i sektionenen */
+        display: flex; /* Sätter flex på sektionen för att rada upp både bild och text brevid varandra */
+        flex-direction: row; /* Behövs egentligen inte då det är standardvalue men för tydlighetens skull */
+        padding: var(--edge-pd);
+        /*padding: 10em 10em;*//* TOP/BOTTOM, LEFT/RIGHT. Sätter padding på båda sidorna av containern */
+        gap: 2em; /* Sätter ett mellanrum mellan de olika divvarna i containern, alltså ett mellanrum mellan bild & text */
+        overflow: hidden;
+    }
+
+    .one-container-image { /* Containern som bilden hålls innuti */
+        flex: 1; /* Då paragrafen har en redan definierad max vidd sätter vi bilden till att ta upp mer plats */
+        object-fit: cover;
+        object-position: center;
+        padding: 0;
+    }
+
+    .one-container-content { /* Den här containern håller texten, P */
+        display: flex; /* Vill centrera texten */
+        flex: 1; /* Den här går tillbaka till display flex i .one-container, Ger texten ~33% av utrymmet */
+        color: white; /* Sätter texten till vit färg */
+        align-items: center; /* Med display flex i samma klass, centrerar texten lodrätt för att passa bättre med bilden på större skärmar */
+        padding: 0;
+    }
+
+}
+
+/*
+TODO
+
+sektionen behöver begränsas i width & height. 
+
+edge padding över 48em behöver vara mer
+
+kanske en max width på sektionen?
+
+
+*/
