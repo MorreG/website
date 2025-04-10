@@ -136,6 +136,72 @@ kanske en max width på sektionen?
     object-fit: cover;
 }
 
+
+
+/* Sektion scroll */
+
+.scroll {
+    padding: var(--edge-pd);
+    height: 300vh;
+    width: 100%;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30em;
+    height: 100%;
+}
+
+.scroll-container-image {
+    flex: 1;
+    height: 150vh;
+}
+
+.scroll-container-image img {
+    aspect-ratio: 1/1;
+    height: 20em;
+    object-fit: contain;
+    position: sticky;
+    top: 6em;
+}
+
+.scroll-container-content {
+    flex: 1; 
+    position: sticky;
+    top: 2em;
+    color: var(--clr-secondary);
+    text-align: center;
+}
+
+
+
+
+
+/*
+.scroll {
+    padding: var(--edge-pd);
+    height: 40em;
+    width: 100%;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2em;
+}
+
+.scroll-container-image {
+    flex: 1;
+}
+
+.scroll-container-content {
+    flex: 1;
+}
+
+*/
+
 .empty {
     height: 100vh;
+    background-color: blue;
 }

@@ -36,7 +36,7 @@
 
 @media (min-width: 64em) { /* ---------------------------------------------------- LAPTOP ... 1024px width */
     :root {
-        --clr-primary: blue;
+        --clr-primary: black;
         --clr-secondary: white;
 
         --fs-h1: clamp(3.4rem, 3vw + 1rem, 5rem); /*low var på 4rem, men lite stort på laptop*/
