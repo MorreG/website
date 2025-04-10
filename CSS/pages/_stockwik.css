@@ -35,7 +35,7 @@
         display: flex; /* 1 Det här sätter sektionen till flex */
         justify-content: center; /* 2 Det här centrerar all content i sektionen vågrätt */
         align-items: center; /* 3 Det här centrerar all content i sektionen lodrätt */
-        height: 40em; /* Det här gör att sektionen tar upp hela skärmen [bla för demonstration] */
+        /*height: 40em; *//* Det här gör att sektionen tar upp hela skärmen [bla för demonstration] */
         /* width: 100%; *//* Det här gör att sektionen tar upp hela skärmen [bla för demonstration] */
         overflow: hidden;
     }
@@ -46,7 +46,7 @@
         padding: var(--edge-pd);
         /*padding: 10em 10em;*//* TOP/BOTTOM, LEFT/RIGHT. Sätter padding på båda sidorna av containern */
         gap: 2em; /* Sätter ett mellanrum mellan de olika divvarna i containern, alltså ett mellanrum mellan bild & text */
-        overflow: hidden;
+        height: 40em;
     }
 
     .one-container-image { /* Containern som bilden hålls innuti */
@@ -70,6 +70,10 @@
 }
 
 @media (min-width: 80em) {
+    .one-container-image__image {
+        object-position: bottom;
+    }
+
     .one-container-content {
         gap: 2em;
     }
@@ -116,6 +120,17 @@ kanske en max width på sektionen?
 
 
 */
+
+.image2 {
+    padding: var(--edge-pd);
+    height: 40em;
+    width: 100%;
+}
+
+.image2 img {
+    object-position: 50% 75%;
+    object-fit: cover;
+}
 
 .empty {
     height: 100vh;
