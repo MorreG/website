@@ -1,8 +1,10 @@
 .section-one {
     display: flex;
     flex-direction: column;
+    gap: 10em;
     overflow: hidden;
 }
+
 /*
 .one-container {
     max-width: 100%;
@@ -22,6 +24,7 @@
 }
 
 .one-container-content {
+    margin-top: 2em;
     color: white;
     padding: var(--edge-pd);
     font-size: var(--fs-body);
@@ -59,6 +62,7 @@
     .one-container-content { /* Den här containern håller texten, P */
         flex: 1; /* Den här går tillbaka till display flex i .one-container, Ger texten ~33% av utrymmet */
         justify-content: center;
+        margin-top: 0;
     }
 
 }
