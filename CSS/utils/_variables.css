@@ -19,7 +19,7 @@
 
 @media (min-width: 48em) { /* ---------------------------------------------------- Tablet ... 768px width */
     :root {
-        --clr-primary: red;
+        --clr-primary: darkgreen;
         --clr-secondary: white;
 
         --fs-h1: 3rem;
