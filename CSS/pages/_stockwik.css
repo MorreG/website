@@ -203,6 +203,134 @@ jobbar i demo för en ny karta.
 
 */
 
+/*<div class="s-container">
+        <div class="s-header">
+            <h1>Stockholm</h1>
+        </div>
+
+        <div class="s-gallery">
+            <img src="/IMG/DSC_1836.JPG" alt="">
+        </div>
+    </div>*/
+
+.s-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: var(--edge-pd);
+}
+
+.s-header {
+    color: white;
+    padding: var(--edge-pd) 0;
+}
+
+.s-gallery {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.s-gallery img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item.active {
+    opacity: 1;
+}
+
+.five-gallery-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.five-gallery-prev, .five-gallery-next {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    width: 2rem;
+    padding: 0;
+
+    /* ... Tar bort visuel bugg på mobil  ... */
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.five-gallery-prev {
+    left: 20px;
+}
+
+.five-gallery-next {
+    right: 20px;
+}
+
+.five-slideshow-arrow {
+    fill: rgba(255, 255, 255, 0.8);
+    transition: fill 0.3s ease;
+}
+
+.five-gallery-prev:hover .five-slideshow-arrow,
+.five-gallery-next:hover .five-slideshow-arrow {
+    fill: white;
+}
+
+/* Navigation Dots */
+.five-gallery-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.gallery-dot {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-dot.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+
 .empty {
     height: 100vh;
     background-color: blue;
