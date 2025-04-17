@@ -3,6 +3,8 @@
     flex-direction: column;
     gap: 10em;
     overflow: hidden;
+    max-width: 90em;
+    margin: 0 auto;
 }
 
 /*
@@ -14,13 +16,12 @@
 .one-container-image {
     overflow: hidden;
     width: 100%;
-   
 }*/
 
 .one-container-image__image {
     object-fit: cover;
     object-position: center;
-
+    border-radius: 16px;
 }
 
 .one-container-content {
@@ -136,6 +137,7 @@ jobbar i demo för en ny karta.
 .image2 img {
     object-position: 50% 75%;
     object-fit: cover;
+    border-radius: 16px;
 }
 
 
@@ -218,11 +220,14 @@ jobbar i demo för en ny karta.
     flex-direction: column;
     height: 100vh;
     padding: var(--edge-pd);
+    max-width: 90em;
+    margin: 0 auto;
 }
 
 .s-header {
     color: white;
     padding: var(--edge-pd) 0;
+    text-transform: uppercase;
 }
 
 .s-gallery {
@@ -230,6 +235,7 @@ jobbar i demo för en ny karta.
     width: 100%;
     height: 100%;
     position: relative;
+    border-radius: 16px;
 }
 
 .s-gallery img {
@@ -328,10 +334,4 @@ jobbar i demo för en ny karta.
 .gallery-dot.active {
     background-color: white;
     transform: scale(1.2);
-}
-
-
-.empty {
-    height: 100vh;
-    background-color: blue;
 }
