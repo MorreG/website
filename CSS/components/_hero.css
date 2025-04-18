@@ -39,7 +39,7 @@ h2
     background-color: var(--clr-primary);
     margin: 0;
     gap: 0.5em;
-    padding-left: var(--edge-pd); /*EDGE PADDING */
+    padding-left: var(--edge-pd); /*EDGE PADDING // ksk borde ändras till 5%*/
     padding-bottom: 1em;
     color: var(--clr-secondary);
     
@@ -55,11 +55,13 @@ h2
 
 }
 
-.hero-header p {
+.hero-header p { /* borde bli h5? */
     flex: 1;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0;
+    font-weight: lighter;
+    color: gainsboro; /* samma som under h2 */
 }
 
 @media (min-width: 64em) {
