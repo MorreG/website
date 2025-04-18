@@ -286,7 +286,7 @@ jobbar i demo för en ny karta.
     line-height: normal;
 }
 
-h1 {
+.map-content-section h1 {
     color: #ffffff;
     font-family: 'Montserrat';
     font-weight: 700;
@@ -311,7 +311,7 @@ h1 {
         padding: 30px 15px;
     }
     
-    h1 {
+    .map-content-section h1 {
         text-align: center;
         font-size: 30px;
         margin-bottom: 20px;
