@@ -1,5 +1,11 @@
 const pois = document.querySelectorAll('.poi');
 
+pois.forEach(poi => {
+    poi.addEventListener('mouseenter', () => {
+        createParticles(poi);
+    });
+});
+
 // Function to create particle effects on POI hover
 function createParticles(poi) {
     const numParticles = 8;
