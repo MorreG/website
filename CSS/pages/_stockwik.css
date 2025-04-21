@@ -297,7 +297,7 @@ jobbar i demo för en ny karta.
 }
 
 .map-intro {
-    color: #aaaaaa;
+    color: gainsboro; 
     font-weight: lighter; /*300*/
     font-size: 1rem; /*16px*/
     letter-spacing: 0.02em;
