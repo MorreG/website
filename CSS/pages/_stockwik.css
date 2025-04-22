@@ -117,13 +117,21 @@
 /*
 TODO
 
-sektionen behöver begränsas i width & height. 
+sektionen behöver begränsas i width & height.  klar?
 
 edge padding över 48em behöver vara mer
 
-kanske en max width på sektionen?
+kanske en max width på sektionen? klar
 
-jobbar i demo för en ny karta.
+jobbar i demo för en ny karta. & implementering klar
+
+---
+
+Sektioner behöver organiseras, - bilder ska se över - Vilka ska vara gallerier & vilka ska vara bilder
+
+html struktur ska snyggas till
+
+klar?
 
 
 */
@@ -297,7 +305,7 @@ jobbar i demo för en ny karta.
 }
 
 .map-intro {
-    color: gainsboro; 
+    color: gainsboro; /*aaaaaa*/
     font-weight: lighter; /*300*/
     font-size: 1rem; /*16px*/
     letter-spacing: 0.02em;
