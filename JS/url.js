@@ -1,3 +1,5 @@
+// Wait for further work - cross page functionality 
+
 // Get the current page filename
 const currentPage = window.location.pathname.split('/').pop();
 
