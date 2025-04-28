@@ -137,3 +137,32 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentIndex);
     }
 });
+
+// TEST -- Slide to IMG
+
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="#stockholm"]');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            const slideIndex = parseInt(link.getAttribute('data-index'));
+            if (!isNaN(slideIndex)) {
+                setTimeout(() => {
+                    activateSlide(slideIndex);
+                }, 300);
+            }
+        });
+    });
+
+    function activateSlide(index) {
+        const galleryItems = document.querySelectorAll('#stockholm .gallery-item');
+        const dots = document.querySelectorAll('#stockholm .gallery-dot');
+
+        galleryItems.forEach(item => {
+            item.classList.toggle('active', parseInt(item.getAttribute('data-index')) === index);
+        });
+        dots.forEach(dot => {
+            dot.classList.toggle('active', parseInt(dot.getAttribute('data-index')) === index);
+        });
+    }
+});

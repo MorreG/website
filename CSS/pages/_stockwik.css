@@ -404,7 +404,7 @@ Göteborg/Vara = samma
     flex-direction: column;
     height: 100vh;
     padding: var(--edge-pd);
-    max-width: 90em;
+    max-width: 90em; /* 64 em på laptop? */
     margin: 0 auto;
 }
 
