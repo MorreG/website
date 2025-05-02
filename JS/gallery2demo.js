@@ -129,6 +129,26 @@ document.addEventListener('DOMContentLoaded', function() {
             touchEndX = e.changedTouches[0].screenX;
             handleSwipe();
         });
+
+        // Add resize event listener to handle viewport changes
+        window.addEventListener('resize', function() {
+            // Force recalculation of slide position
+            showSlide(currentIndex);
+            
+            // Make sure container width is correct
+            const galleryWidth = galleryContainer.offsetWidth;
+            galleryItems.forEach(item => {
+                item.style.minWidth = galleryWidth + 'px';
+                item.style.width = galleryWidth + 'px';
+            });
+        });
+    
+        // Initial size calculation
+        const galleryWidth = galleryContainer.offsetWidth;
+        galleryItems.forEach(item => {
+            item.style.minWidth = galleryWidth + 'px';
+            item.style.width = galleryWidth + 'px';
+        });
         
         // Initialize first slide
         showSlide(currentIndex);
