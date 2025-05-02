@@ -422,28 +422,31 @@ Göteborg/Vara = samma
     border-radius: 16px;
 }
 
+.s-gallery-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
 .s-gallery img {
     object-fit: cover;
     object-position: center;
+    width: 100%;
+    height: 100%;
 }
 
 .gallery-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    flex-shrink: 0; /* Prevent items from shrinking */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.gallery-item.active {
-    opacity: 1;
-}
-
+/* Keep your existing control styles unchanged */
 .five-gallery-controls {
     position: absolute;
     top: 0;

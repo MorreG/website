@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             console.warn('Gallery container found but no gallery items within it');
             return;
         }
+
+        console.log(`Gallery initialized with ${galleryItems.length} items`);
         
         let currentIndex = 0;
         let touchStartX = 0;
@@ -34,21 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 index = galleryItems.length - 1;
             }
             
-            // Remove active class from all items
-            galleryItems.forEach(item => {
-                if (item) item.classList.remove('active');
-            });
+            console.log(`Showing slide ${index}`);
             
-            // Add active class to current item
-            if (galleryItems[index]) {
-                galleryItems[index].classList.add('active');
-            } else {
-                console.error('Gallery item at index', index, 'not found');
-            }
+            // Move the container to show the current slide
+            galleryItemsContainer.style.transform = `translateX(-${index * 100}%)`;
             
-            // Handle dots if they exist
+            // Remove active class from all dots
             if (dots.length > 0) {
-                // Remove active class from all dots
                 dots.forEach(dot => {
                     if (dot) dot.classList.remove('active');
                 });
@@ -65,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Previous button click
         if (prevButton) {
             prevButton.addEventListener('click', function() {
+                console.log('Previous button clicked');
                 currentIndex--;
                 if (currentIndex < 0) {
                     currentIndex = galleryItems.length - 1;
@@ -76,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Next button click
         if (nextButton) {
             nextButton.addEventListener('click', function() {
+                console.log('Next button clicked');
                 currentIndex++;
                 if (currentIndex >= galleryItems.length) {
                     currentIndex = 0;
@@ -96,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         return;
                     }
                     
+                    console.log(`Dot clicked for index ${dotIndex}`);
                     showSlide(dotIndex);
                 });
             }
@@ -135,8 +132,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Initialize first slide
         showSlide(currentIndex);
+
     }
 });
+
 
 // TEST -- Slide to IMG
 
