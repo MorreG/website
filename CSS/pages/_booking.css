@@ -1,5 +1,5 @@
 @media (min-width: 48em) {
-    .one1-container {
+    .one-container #part2 {
         flex-direction: row-reverse;
     }
 }
