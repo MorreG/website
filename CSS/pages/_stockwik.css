@@ -44,7 +44,7 @@
         overflow: hidden;
     }
 
-    .one-container .one-container-1 { /* Denna container håller allt vi kommer ha i sektionenen */
+    .one-container { /* Denna container håller allt vi kommer ha i sektionenen */
         display: flex; /* Sätter flex på sektionen för att rada upp både bild och text brevid varandra */
         flex-direction: row; /* Behövs egentligen inte då det är standardvalue men för tydlighetens skull */
         padding: var(--edge-pd);
