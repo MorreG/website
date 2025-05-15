@@ -1,0 +1,5 @@
+@media (min-width: 48em) {
+    .one1-container {
+        flex-direction: row-reverse;
+    }
+}
