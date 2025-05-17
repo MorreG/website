@@ -3,7 +3,7 @@
         flex-direction: row-reverse;
     }
 
-    .image2.two {
+    .one-container-image__image.two {
         object-fit: contain;
     }
 }
