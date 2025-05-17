@@ -2,4 +2,8 @@
     .one-container.two {
         flex-direction: row-reverse;
     }
+
+    .image2.two {
+        object-fit: contain;
+    }
 }
