@@ -4,6 +4,6 @@
     }
 
     .one-container-image__image.two {
-        object-fit: contain;
+        object-position: 50% 55%;
     }
 }
