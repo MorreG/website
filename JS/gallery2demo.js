@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function initGallery(galleryContainer) {
         // Find elements within this specific gallery
         const galleryItemsContainer = galleryContainer.querySelector('.s-gallery-container');
-        const galleryItems = galleryContainer.querySelectorAll('.gallery-item');
-        const prevButton = galleryContainer.querySelector('.five-gallery-prev');
-        const nextButton = galleryContainer.querySelector('.five-gallery-next');
-        const dots = galleryContainer.querySelectorAll('.gallery-dot');
+        const galleryItems = galleryContainer.querySelectorAll('.s-gallery-item');
+        const prevButton = galleryContainer.querySelector('.s-gallery-prev');
+        const nextButton = galleryContainer.querySelector('.s-gallery-next');
+        const dots = galleryContainer.querySelectorAll('.s-gallery-dot');
         
         // Check if we have gallery items - if not, don't initialize this gallery
         if (galleryItems.length === 0) {
