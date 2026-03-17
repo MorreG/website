@@ -437,7 +437,7 @@ Göteborg/Vara = samma
     height: 100%;
 }
 
-.gallery-item {
+.s-gallery-item {
     min-width: 100%;
     height: 100%;
     flex-shrink: 0; /* Prevent items from shrinking */
@@ -447,7 +447,7 @@ Göteborg/Vara = samma
 }
 
 /* Keep your existing control styles unchanged */
-.five-gallery-controls {
+.s-gallery-controls {
     position: absolute;
     top: 0;
     left: 0;
@@ -457,7 +457,7 @@ Göteborg/Vara = samma
     z-index: 10;
 }
 
-.five-gallery-prev, .five-gallery-next {
+.s-gallery-prev, .s-gallery-next {
     position: absolute;
     top: 50%; 
     transform: translateY(-50%);
@@ -479,26 +479,26 @@ Göteborg/Vara = samma
     -webkit-tap-highlight-color: transparent;
 }
 
-.five-gallery-prev {
+.s-gallery-prev {
     left: 20px;
 }
 
-.five-gallery-next {
+.s-gallery-next {
     right: 20px;
 }
 
-.five-slideshow-arrow {
+.s-slideshow-arrow {
     fill: rgba(255, 255, 255, 0.8);
     transition: fill 0.3s ease;
 }
 
-.five-gallery-prev:hover .five-slideshow-arrow,
-.five-gallery-next:hover .five-slideshow-arrow {
+.s-gallery-prev:hover .s-slideshow-arrow,
+.s-gallery-next:hover .s-slideshow-arrow {
     fill: white;
 }
 
 /* Navigation Dots */
-.five-gallery-dots {
+.s-gallery-dots {
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -509,7 +509,7 @@ Göteborg/Vara = samma
     z-index: 10;
 }
 
-.gallery-dot {
+.s-gallery-dot {
     width: 0.4rem;
     height: 0.4rem;
     border-radius: 50%;
@@ -518,7 +518,7 @@ Göteborg/Vara = samma
     transition: all 0.3s ease;
 }
 
-.gallery-dot.active {
+.s-gallery-dot.active {
     background-color: white;
     transform: scale(1.2);
 }
